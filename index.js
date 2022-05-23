@@ -6,7 +6,7 @@
 
 const express = require('express');
 const server = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
 server.use(express.static('app'));
 server.use('/node_modules', express.static(__dirname + '/node_modules'));
