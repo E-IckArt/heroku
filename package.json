@@ -6,9 +6,9 @@
         "npm": "8.x"
     },
     "description": "Premier déploiement sur heroku projet utilisé : Web App - Memory Game",
-    "main": "index.js",
+    "main": "js/index.js",
     "scripts": {
-        "start": "node index.js",
+        "start": "nodemon js/index.js",
         "test": "mocha"
     },
     "repository": {
@@ -18,11 +18,15 @@
     "author": "E_IckArt",
     "license": "ISC",
     "dependencies": {
+        "body-parser": "^1.20.0",
         "bootstrap": "^5.1.3",
         "bootstrap-icons": "^1.8.1",
+        "cors": "^2.8.5",
         "express": "^4.18.1",
         "jquery": "^3.6.0",
-        "jsdom": "^19.0.0"
+        "jsdom": "^19.0.0",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.16"
     },
     "devDependencies": {
         "mocha": "^9.2.2"
