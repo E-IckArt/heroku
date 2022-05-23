@@ -2,7 +2,8 @@
     "name": "heroku",
     "version": "1.0.0",
     "engines": {
-        "node": "16.x"
+        "node": "16.x",
+        "npm": "8.x"
     },
     "description": "Premier déploiement sur heroku projet utilisé : Web App - Memory Game",
     "main": "index.js",
