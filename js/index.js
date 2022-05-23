@@ -21,6 +21,6 @@ server.use(
         extended: true,
     })
 );
-server.use('/node_modules', express.static(__dirname + '/node_modules'));
+
 server.use(router); // Requests processing will be defined in the file router
 server.listen(port, () => console.log('Server app listening on port ' + port));
