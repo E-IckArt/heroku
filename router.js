@@ -1,10 +1,15 @@
 const express = require('express');
 const router = express.Router();
 
+/* Dire d'exporter le contenu du fichier pour pouvoir l'utiliser dans le fichier index.js*/
 module.exports = router;
 
 /**
- * Dire au serveur il doit renvoyer le fichier 'index.html' au navigateur lorsqu'il reçoit une requête sur le port indiqué.
+ * Déclaration du processus des requêtes
+ */
+
+/**
+ * Dire au serveur qu'il doit renvoyer le fichier 'index.html' au navigateur lorsqu'il reçoit une requête sur le port indiqué.
  * (Port indiqué dans le fichier index.js)
  * */
 router.get('/', (req, res) => {
