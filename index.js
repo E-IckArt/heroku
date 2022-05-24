@@ -1,17 +1,22 @@
 /**
- * Initialiser nodejs avec express
+ * Initialiser nodejs avec express, router, morgan, cors, nodemon (commmande npm install [nomDuPackage] à faire avant).
  * Doc : https://www.cril.univ-artois.fr/~boussemart/express/chapter01.html
  */
 
 const express = require('express');
-const router = require('../router');
+const router = require('./router');
 
 const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
 const server = express();
-const port = process.env.PORT || 8000;
+
+// configuration du port : le serveur écoutera le port 8000 si la variable d'environnement port n'est pas définie
+let port = process.env.PORT;
+if (port == null || port == '') {
+    port = 8000;
+}
 
 server.use(morgan('combined'));
 server.use(cors());
